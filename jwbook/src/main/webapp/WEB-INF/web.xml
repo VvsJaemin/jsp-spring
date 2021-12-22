@@ -40,4 +40,14 @@
     <servlet-name>CalcServlet</servlet-name>
     <url-pattern>/CalcServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ProductController</display-name>
+    <servlet-name>ProductController</servlet-name>
+    <servlet-class>ch08.ProductController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductController</servlet-name>
+    <url-pattern>/pcontrol</url-pattern>
+  </servlet-mapping>
 </web-app>
