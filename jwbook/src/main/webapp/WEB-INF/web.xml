@@ -50,4 +50,24 @@
     <servlet-name>ProductController</servlet-name>
     <url-pattern>/pcontrol</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>StudentController</display-name>
+    <servlet-name>StudentController</servlet-name>
+    <servlet-class>ch09.StudentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentController</servlet-name>
+    <url-pattern>/StudentControl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>StudentControllers</display-name>
+    <servlet-name>StudentControllers</servlet-name>
+    <servlet-class>ch09.StudentControllers</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentControllers</servlet-name>
+    <url-pattern>/StudentControl</url-pattern>
+  </servlet-mapping>
 </web-app>
