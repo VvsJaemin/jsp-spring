@@ -70,4 +70,14 @@
     <servlet-name>StudentControllers</servlet-name>
     <url-pattern>/StudentControl</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NewsController</display-name>
+    <servlet-name>NewsController</servlet-name>
+    <servlet-class>ch10.NewsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsController</servlet-name>
+    <url-pattern>/news.nhn</url-pattern>
+  </servlet-mapping>
 </web-app>
