@@ -19,17 +19,17 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div class="container w-75 mt-5 mx-auto">
+	<div class="container" w-75 mt-5 mx-auto">
 		<h2>뉴스 목록</h2>
 		<hr>
 		<ul	class="list-group">
 			<c:forEach var="news" items="${newslist }" varStatus="status">
 				<li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-					<a href="/news/${news.aid }" class="text-decoration-none">
+					<a href="news.nhn?action=getNews&aid=${news.aid }" class="text-decoration-none">
 						[${status.count }] ${news.title }, ${news.date }
 					</a>
 					
-					<a href="/news/delete/${news.aid }">
+					<a href="news.nhn?action=deleteNews&aid=${news.aid }">
 						<span class="badge bg-secondary"> &times;</span>
 					</a>
 				</li>
@@ -50,7 +50,7 @@
 			
 			<div class="collapse" id="addForm">
 				<div class="card card-body">
-					<form method="post" action="/news/add" enctype="multipart/form-data">
+					<form method="post" action="/jwbook/news.nhn?action="addNews" enctype="multipart/form-data">
 						<label class="form-label">제목</label>
 						<input type="text" name="title" class="form-control">
 					<label class="form-label">이미지</label>

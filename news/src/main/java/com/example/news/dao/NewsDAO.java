@@ -1,5 +1,13 @@
 package com.example.news.dao;
 
+import com.example.news.domain.News;
+import org.springframework.stereotype.Component;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
+@Component
 public class NewsDAO {
     final String JDBC_DRIVER="com.mysql.cj.jdbc.Driver";
     final String JDBC_URL = "jdbc:mysql://localhost/root?serverTimezone=UTC";
